@@ -1,0 +1,403 @@
+Introduction to Python,
+------
+	Introduction to Scripting
+	History and features of Python
+	Python Pre-requisites
+	Environment Setup for Python
+	
+Python Language Fundamentals
+------
+	Python Basic Datatypes
+	Python Variable Types
+	Python Operators
+	Python Data Structure Objects
+======================================================
+I am Sudhakar Palanivelu...
+---------------------------
+	Introduction to Scripting...
+	
+	Programming...
+	-------------
+		Compilation
+			---> Whole code and converting to machine understandable(Executable format)
+				C/C++
+		
+		Interpretation
+			---->
+				Line by line 
+				
+				batch files (.bat) in windows command prompt
+				shell scripts in UNIX/Linux
+				java scripts and VB scripts on browsers
+------------------------------------------------------
+In Order to work with Python, 
+	You can install it by downloading from python.org download the installer file.
+	
+	right click --> run as admininstrator
+		click on Add python.exe to PATH check box
+		
+	This will install Python interpreter into your system.
+		--------------
+		If your system has only Python interpreter
+		You need to use others/external apps like 
+		-----------------------------------------
+			notepad  --> type/edit Python programs/scripts
+			command Prompt --> to run/debug Python scripts
+		----------------------------------------------------
+		IDE --> Integraded Development environment.
+		-------------------------------------------
+			VS Code --> download from 
+				https://code.visualstudio.com/download
+	
+Python Language Fundamentals
+------
+	
+	Python Basic Datatypes	
+	======================
+		number --> numerical 
+			integer 
+			float 
+			
+		In programming languages like C/C++/Java
+
+			we use declarations like 
+				int var = 10;
+				float var = 102.234;
+				
+		Where as in Python, we dont use keywords to assign values.		
+			we use 
+				var = 10 -->interpreted as int 
+				var = 102.234 -->interpreted as float
+				
+		Strings:
+			single line strings  single or double quotes
+				var = 'hello World'
+				var = "hello World"	
+			
+			multi-line strings 	triple quotes	
+				var = '''hello 
+				
+						World'''
+						
+				var ="""hello 
+				
+						World"""
+		Boolean Types:
+			var = True
+			var = False 
+	
+Python Operators:
+-----------------
+	operators are special symbols or keywords that perform operations on variables and values
+ 
+ 
+	operands and operators --> operations or expression
+	
+	var = 100
+	result = var + 10
+	
+	Based on the functionality of the operators, we can classify as 
+	
+	1. Arithmetic operators
+		Here you get a arithmetic result at the end of the expression.		
+		+, -, *, %, / (float), //(integral), **(power)	
+	
+	2. Relational operators
+		Here the result is a boolean value (True or False) usually used as part of conditional statements in if or Loop like while loop
+		
+		if 10 < 20:
+			part of conditional statement 
+			
+		while var <= 10:
+			part of while loop
+		
+		<, >, <=, >=, ==, !=
+		
+	
+	3. Logical operators 
+		Used in combination of expression with or, and, not keywords. Result is True or False
+		
+		if var > 18 and var < 60:
+			here both expressions must be True
+		if var < 18 or var > 60:
+			here any one of the expressions can be True
+		if not var < 18:
+			Negate the give expression
+		
+	4. Bitwise operators
+		Performs operations on bit level on integer values or variables. Here the result is usually Integer.
+		
+		& (AND), | (OR), ~(1's complement), ^(XOR), <<, >> 
+		
+		Integer Representation:
+		-----------------------		
+			var = 10 #decimal representation
+					 #octal representation (0o12)
+					 #hexa-decimal representation (0xa)
+					 #binary representation (0b1010)
+			
+		Decimal values:
+			0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+		
+		Octal values:
+			0, 1, 2, 3, 4, 5, 6, 7, 10, 11, 12, 13, 14, 15, 16, 17, 20, 21
+		
+		Hexa-Decimal:
+			0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f, 10,
+			11, 12, 13, 14, 
+		
+		Binary: 
+			0, 1, 10, 11, 100, 101, 110, 111, 1000, 1001, 1010,
+			1011, 1100, 1101, 1110, 1111, 10000
+		
+		10 & 8
+		
+		1010 --> 10
+		1000 --> & 8
+	----------	
+		1000 --> 8 Result
+	---------------	
+	
+		10 | 8
+		
+		1010 --> 10
+		1000 --> | 8
+	----------	
+		1010 --> 10 Result
+	---------------	
+	
+		10 ^ 8
+		
+		1010 --> 10
+		1000 --> ^ 8
+	----------	
+		0010 --> 2 Result
+	---------------	
+	
+		10 << 1 --> Left shift 
+		
+		1010 << 1 
+		10100 --> Result: 20
+	
+		10 >> 1 --> Right shift 
+		1010 >> 1 
+		
+		101 --> Result: 5
+=====================================================	
+	5. conditional operator
+		In Languages like C/C++/Java we have ?:
+			cond ? True : False
+			
+		In Python, we use conditional expression 
+
+		res = True if cond else False
+		
+		for Example:
+			res = 'Odd Number' if num % 2 else 'Even Number' 
+		
+	6. Type casting 
+		int(string) --> converts given string to integer (decimal by default)
+		
+		int(string, 8) --> Octal 
+		
+		var = int('123') --> '123' in string format
+		
+		--> first digit ('1')
+				res = 0 
+				'1' --> '1' - '0'  --> ASCII --> 49  - 48 -> 1
+				res = res * base(10) + digit(1) --> 0 + 1--> 1
+		-->	Next digit('2')
+				'2' --> '2' - '0'  --> ASCII --> 50  - 48 -> 2
+				res = res * base(10) + digit(2) --> 10+2 -> 12
+		-->	Next digit('3')
+				'3' --> '3' - '0'  --> ASCII --> 51  - 48 -> 3
+				res = res * base(10) + digit(3)--> 120+3 -> 123
+			No Next Digit --> Iteration stopped			
+			res = 123 --> Integer 	
+	
+	
+		float(str)
+		str(int/float/list/tuple/set)
+		list(str/tuple/dict/set)
+		tuple(str/list/dict/set)
+		dict()
+		set()
+====================================================		
+	7. Membership Operators
+		in , not in, is
+	
+========================================================
+Python Data Structure Objects:
+------------------------------
+	Collection of data with operations defined to perform on the data.
+	
+	one variable stores one value, If I want to store multiple values either I take multiple variables or go for a data structure like list, tuple, dict or set based on what kind of data it is.
+	
+	for examples:
+		are duplicates allowed
+		are editing / modification allowed 
+		is it single value 
+		or combination of key-pair values 
+	
+We are talking in terms of collection of values:
+------------------------------------------------	
+	1.	If duplicates are allowed and the value are of single type and it allows editing/modification then choose list as a data structure.
+	
+	2. If duplicates are allowed and the value are of single type and it DOES NOT allow editing/modification then choose tuple as a data structure.
+	
+	3. If duplicates are NOT allowed and the value are of single type and it DOES NOT allow editing/modification then choose set as a data structure.
+		--> 
+	4. If duplicates are NOT allowed and the value are of key-value pair type and it DOES NOT allow editing/modification of keys but can modify values then choose dict(dictionary) as a data structure.
+	
+	Python Supportted Data structure types 
+		list:
+			 [] can be used to create a list
+			supports/stores different(mixed) data types
+			mutable/modifiable --> data can be modified		allows duplicates
+			can access individual elements through indexing 
+			can accesss group of elements through  index slicing
+		Commonly used methods(functions used with list object):		
+			list.append(element(single value)) 
+					can be added at the end
+			list.insert(pos, element)
+					insert element in the specified position
+			list.extend(iterable/collection)
+					append multiple values from another collection
+			list.remove(element) # based on value 
+			list.pop([0])  #last element by default
+			list.count(element)
+			list.sort()
+			list.reverse()
+			list.copy()
+			list.clear()
+===========================================================	
+tuple:
+	() is used to create a tuple, supports/stores mixed data type.
+	immutable--> data cannot be modified allows duplicates
+	elements can be accessed through index 
+	multiple values can be accessed using index slicing
+	Can be used when the data collection is fixed
+
+	common methods:
+	
+		tuple.count(element)
+		tuple.index(element)
+======================================================
+set:
+	we use {} to create a set.
+	mutable/modifiable
+	no duplicates
+	values/elements are treated as keys, Which are hashable(immutable type like int, str, float, tuple)
+	
+	days = {'sun', 'mon', 'tue','wed','thu','fri', 'sat'}
+	
+	Commonly used methods:
+		days.add('New value')
+		days.remove('New value') #error if element not found
+		days.discard(value')#no error if element not found
+		days.pop() #removes and returns random element
+		days.clear() #empties the set 
+		days.update(iterable/collection)
+		set1.union(set2) #returns union 
+		set1.intersection(set2) #returns common elements 
+		set1.difference(set2) #returns elements present in set1 but not in set2 
+		set1.issubset(set2) #returns True if set1 is subset of set2 
+		set1.issuperset(set2) #returns True if set1 is superset of set2
+===================================================== 
+dict:
+	we use {} to create a set.
+	mutable/modifiable
+	no duplicates of keys
+	key-value keys are unique which is hashable(immutable type like int, str, float, tuple)	
+		
+	example:
+	
+		numWords = {'one':1, 'two':2, 'three':3,'four':4, 'five':5, 'six':6, 'seven':7, 'eight':8, 'nine':9, 'ten':10, 'hundred':100, 'thousand':1000, 'lakhs': 100000, 'crore':10000000}
+		
+	Commonly Used Methods:
+	----------------------	
+	dt.get(key,optional [default]) --> returns value or default
+	dt1.update(dict2) 
+	dt.pop(key) --> returns value of the given key 
+	dt.clear()
+	dt.copy()
+	dt.setdefault(key, value) --> return value of key if exists else sets value of key 
+=============================================================
+Python Control Statements	
+-------------------------
+	Any Programming logic can be solved using these 3 statements 
+	
+	1. Sequential statements
+	2. Conditional statements
+		using if 
+	3. Iterative/Looping statements
+		using for, while 
+====================================================
+if cond:
+indent --> multiple spaces or tab 
+	statement here  #inside the condition
+statement here #outside the condition 
+
+num = 10
+if num % 2 == 1: #Here colon 
+	print(f'{num} is ODD')
+else:
+	print(f'{num} is EVEN')
+----------------------------------------------------
+Problem 2: 
+	take a number # use num = int(input('Accept a num: '))
+	print the number with correct suffix
+Sample Data:	
+	Accept a num: 1
+	output: 1st
+	
+	Accept a num: 11
+	output: 11th
+	
+	Accept a num: 101
+	output: 101st
+	
+	Accept a num: 12
+	output: 12th
+	
+	Accept a num: 2
+	output: 2nd
+---------------------------------------------------------
+for var in collection 
+	statements here 
+	
+
+lst = [10,20,30,40,50]
+for var in lst:
+	print(var)
+Problem #3:  EvenOddSeries.py
+-----------	
+	Accept a number from the user, print the title accordingly(Even or Odd) followed by 5 number series from the given number and next line print 5 number series from next number.
+	
+Scenario 1:
+	Accept a number: 100
+	Even: 100 102 104 106 108
+	Odd: 101 103 105 107 109
+Scenario 2:	
+	Accept a number: 101
+	Odd: 101 103 105 107 109
+	Even: 102 104 106 108 110	
+
+Problem #4: primeLogic.py 
+-----------
+	Accept a number from the user, print whether the given number is prime or not. Involves looping and condition statement 
+Scenario 1:	
+	Accept a number: 100
+	100 is NOT A prime number 
+Scenario 2:
+	Accept a number: 101
+	101 is a prime number 
+
+Problem #5: primeSeries.py
+-----------
+	Accept a number from the user, print next 25 primes
+	Involves nesting of loop and condition statement.
+	
+	Accept a num: 100
+	101, 103, 107, 109, ...
+	
