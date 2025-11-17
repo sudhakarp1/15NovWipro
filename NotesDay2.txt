@@ -1,0 +1,128 @@
+Day 7	17-Nov
+---------------
+Python Language Fundamentals:
+	Python Data Structure Objects (Continued...)
+Python I/O Expressions	
+	Inputting statements
+	Outputting styles
+Python Control Statements:	
+	Python Conditional Control Statements
+	Python Loop Control Statements
+	List Comprehension	
+----------------------------------------------
+Problem statements for day 1:
+----------------------------
+	1. Arithmetic operators
+	1. v1. conditional operators
+
+	2. Number with correct suffix
+	3. Even Odd Series
+	4. prime Logic
+	5. prime series
+-----------------------------------------
+Python Data Structure Objects (Continued...):
+---------------------------------------------
+
+1. Create an empty list, append 100 elements into the empty list from any number accepted from the user. Print the list.
+
+	Accept a number: 100
+	100 101 102 103 ... 199
+
+2. User the previous problems code as your list containing values(data). Take each element from the list, check whether the element is prime or not. If prime leave it as it is, if not make it zero. When you print your list containing prime numbers and zeroes.
+	Accept a number: 100
+	100 101 102 103 ... 199
+	0 101 0 103  ... 199
+	
+	[0, 101, 0, 103, 0, 0, 0, 107, 0, 109, 0, 0, 0, 113, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 127, 0, 0, 0, 131, 0, 0, 0, 0, 0, 137, 0, 139, 0, 0, 0, 0, 0, 0, 0, 0, 0, 149, 0, 151, 0, 0, 0, 0, 0, 157, 0, 0, 0, 0, 0, 163, 0, 0, 0, 167, 0, 0, 0, 0, 0, 173, 0, 0, 0, 0, 0, 179, 0, 181, 0, 0, 0, 0, 0, 0, 0, 0, 0, 191, 0, 193, 0, 0, 0, 197, 0, 199]
+	
+3.  User the previous problems code as your list containing values(data which is zeroes and prime numbers). Find the maximum count of zeroes between 2 prime numbers. print the maximum count of zeroes along with the 2 prime numbers.
+===========================================================
+
+List is collection of mutable data.
+	That is what we tried to do.
+		1. filling the elements by appending (expanding ) the list.
+		2. updating the list (by making non-prime numbers to zero)
+		3. Performing reading(scanning the whole list from first element to last).
+		
+	Now I would like to create list of lists. What you call matrix.
+	
+	Accept from the user the dimension of the matrix(Row X Col).
+		a. Create zero matrix of the given dimension
+		b. Create unit matrix of the given dimension
+		c. Fill the elements from 1 to last element in row major format.
+		d. Transpose the matrix
+==========================================================
+Dictionary:
+-----------
+	Take a lengthy string from the user: 
+		1. store words and their count as key and value in a dictionary.
+		
+		2. store characters and their count as key and value in a dictionary.
+		
+		tip: use setdefault()
+============================================================
+Python I/O Expressions	
+	Inputting statements
+		input('prompt string')  --> returns string
+		raw_input('prompt string') --> returns string
+	Outputting styles --> 
+		print 'string to be printed here'
+		print('string to be printed here')
+	=================================================
+Formatted Output:
+------------------
+1. 
+	Format specifiers as used in printf in C language.
+	
+		%d --> signed integer
+		%u --> unsigned integer
+		%s --> string 
+		%c --> single character 
+		%f --> fixed floating value 
+		%e --> scientific floating value 
+		
+	==================================================
+2. 
+	str.format()
+
+
+3. 
+	f'string'  --> format string 
+	
+	f'string: {var:format}'
+========================================================
+Problem: OutputFormat.py
+
+Have a list of 5 elements with Name, qty and price(In a tuple)
+Print the 5 values along with the amount and total number of  items.
+
+------------------------------------------------------
+Sl No |  Name             | Qty  | Price   |   Amount|
+------------------------------------------------------
+  1   | Jim Jam           | 2    | 14.5    |  29.0   | 
+  2   |                   |      |         |         | 
+  3   |                   |      |         |         | 
+  4   |                   |      |         |         | 
+  5   |                   |      |         |         | 
+======================================================
+			Total 5  Items         Total   |         |       
+------------------------------------------------------
+
+
+Next Topic:
+
+List Comprehension:
+-------------------
+Problem #1:
+-----------
+	1. Take  a lengthy,create a list by converting each word to uppercase.
+Problem #2:
+-----------
+	2. Create a list of tuples containg (number, squares) from numbers 1 - 20
+Problem #3:
+-----------
+	3. Take a matrix(list of lists), convert it into a 1 dimension list (flattening a matrix).
+--------------------------------------------------
+
+	
+	
