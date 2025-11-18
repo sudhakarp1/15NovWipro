@@ -1,0 +1,120 @@
+Day 8	18-Nov
+--------------
+Python Control Statements
+	Python Conditional Control Statements
+	Python Loop Control Statements
+Python Functions
+	Python Built-In Functions
+	Python User Defined Functions
+========================================================
+Statements that are normally used in loops 
+
+	In General(Any programming language), we have 
+		break  --> quit the current loop 
+		continue  --> to skip the current iteration in a loop 
+		
+	Specific to Python
+		pass 
+		else
+========================================================
+Python Functions:
+-----------------
+	What is a program?
+		set of instructions to perform a  specific task.
+		
+		Task : can be divided into sub-tasks
+		
+		Functions is a mechanism provided in your language to perform sub-program or sub-tasks.
+		
+def funName(): #definition of function 
+	#statements here 
+	
+funName() # calling 
+
+Problem #1:
+========---
+	Write a program consisting of multiple user defined functions to print the calendar of any given month and year.
+		def dayOfWeek(dd, mm, yyyy):
+		def maxDays(mm, yyyy):
+		def isLeap(yyyy):
+		def printCalendar(mm, yyyy):
+		def monthName(mm):
+==================================
+Sample Output:
+	Enter month and Year: 11 2025	
+		November 2025
+	Su Mo Tu We Th Fr Sa
+					   1
+	 2  3  4  5  6  7  8
+	 9 10 11 12 13 14 15
+	16 17 18 19 20 21 22
+	23 24 25 26 27 28 29
+	30
+=========================================================	
+Problem #2:
+----------
+	Number Guessing Game
+Functions:
+	generateNumber() 
+	takeGuess()
+	compareNumbers()
+	showResult()
+	
+=================================================
+Next Topic:
+-----------
+	User Defined Functions:
+		Intro  --> done
+		Basic User Defined Function Syntax --> done 
+		Function with Parameters(positional parameters)
+		Function with return value/values
+		function with default arguments
+		Function with variable number of args
+		Function with keyword arguments
+		Docstring
+		Function calling another function/flow control
+		Anonymous functions (lambda)
+----------------------------------------------------------
+Function with Parameters:
+-------------------------
+	def funName(arg):
+		
+Function with return value/values:
+----------------------------------
+
+Function with variable number of args (*args)
+---------------------------------------------
+	*args should be put after positional parameters.
+	
+------------------------------------------------------------
+Function with default arguments:
+--------------------------------
+Function with keyword arguments (**kwargs)
+
+To be discussed:
+----------------
+Docstring
+=========
+	documentation string ...
+	
+	
+Function calling another function/flow control:
+-----------------------------------------------
+
+Anonymous functions (lambda)
+============================
+		id() --> Memory address of a variable
+		type() --> data type of the variable 
+		len() --> total number of elements present 
+		range()--> returns the range object which can be used in iteration
+		sorted(collection) --> returns a sorted list
+-------------------------------------------------------		
+Explore about copy() method --> shallow copy
+=========================================================
+Python Modules
+	Python Built-In Modules
+	Python User Defined Modules
+	Setting up Module Path
+
+
+
