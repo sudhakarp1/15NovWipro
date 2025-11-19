@@ -1,0 +1,164 @@
+Day 9	19-Nov
+--------------
+Python Functions
+	Python Built-In Functions
+	Python User Defined Functions
+Python Modules
+	Python Built-In Modules
+	Python User Defined Modules
+	Setting up Module Path
+Python Packages
+	Python Built-In Packages
+	Python User Defined Packages
+	Setting up Package Path
+	Text Processing Services
+		String — Common string operations
+		re — Regular expression operations
+	Data Types
+		datetime — Basic date and time types
+		calendar — General calendar-related functions
+		array — Efficient arrays of numeric values
+	Numeric and Mathematical Modules
+		Numbers — Numeric abstract base classes
+		Math — Mathematical functions
+		Decimal — Decimal fixed-point and floating-point arithmetic
+	File and Directory Access
+		Pathlib — Object-oriented filesystem paths
+		Os.path — Common pathname manipulations
+	Data Compression and Archiving
+		Zlib — Compression compatible with gzip
+		gzip — Support for gzip files
+		zipfile — Work with ZIP archives
+		tarfile — Read and write tar archive files
+	File Formats
+		csv — CSV File Reading and Writing
+		configparser — Configuration file parser
+	Generic Operating System Services
+		Logging — Logging facility for Python
+		Logging.config — Logging configuration
+		Logging.handlers — Logging handlers
+	Command Line Interface Libraries
+		sys.argv
+		argparse
+========================================================
+Python Modules
+	A Python file is a module(Any file with .py extension is a module). We can create our own python modules.
+	
+	A module consists of variables(data), functions and classes
+	
+Built-In Modules:
+-----------------
+	Your Python Installation comes with lot of Python modules which are referred to as Built-In Modules.
+	
+Problem #1:	
+	using sys.argv:
+		write a Python script/program to take command line arguments, perform the mentioned operation and print the result.
+		
+		Scenario #1:
+			python calc.py add 100 20 30 40 50 60
+			output: 300
+		Scenario #2:	
+			python calc.py Sub 100 20
+			output: 80
+		Scenario #3:
+			python calc.py div 100 20
+			output: 5
+				
+Problem #2:
+-----------
+	Implement a package MyCalender having different modules having one function each. Test your Package by running a program where month and year are passed as command line argument.
+	
+		python calTest.py 5 2025
+		
+Built-In Package:
+-----------------
+File and Directory Access
+		Pathlib — Object-oriented filesystem paths
+		Os.path — Common pathname manipulations
+			os.path.join(path, *paths): Joins multiple path components into a single path.
+			
+			os.path.exists(path): Checks if a given path exists.
+			
+			os.path.isabs(path): Checks if a given path is absolute.
+			
+			os.path.isfile(path): Checks if the path is a file.
+			
+			os.path.isdir(path): Checks if the path is a directory
+==========================================================
+Text Processing:
+	String — Common string operations
+	re — Regular expression operations
+	
+General Packages:
+	datetime — Basic date and time types
+	calendar — General calendar-related functions
+	array — Efficient arrays of numeric values
+	
+=============================================
+WindowsPath ==>  D:\folder\subFolder\file.txt
+PosixPath ==> /home/sudhakar/example/file.txt (url)
+=====================================================
+
+datetime:
+	Some of the classes in datetime package are 
+		date --> Dealing with date (yyyy,mm,dd)
+		time --> Working with time(hours, minutes, seconds, ms)
+		datetime --> date + time together
+		timedelta -->  Time Differences
+========================================================	Numeric and Mathematical Modules
+	Numbers — Numeric abstract base classes
+	Math — Mathematical functions
+	Decimal — Decimal fixed-point and floating-point arithmetic
+Data Compression and Archiving		
+	Zlib — Compression compatible with gzip
+	gzip — Support for gzip files
+	zipfile — Work with ZIP archives
+	tarfile — Read and write tar archive files
+============================================================
+File Formats
+	csv — CSV File Reading and Writing
+	configparser — Configuration file parser
+Generic Operating System Services
+	Logging — Logging facility for Python
+	Logging.config — Logging configuration
+	Logging.handlers — Logging handlers
+Command Line Interface Libraries
+============================================================
+numbers module provides an abstract class called Number.
+
+Number
+ ├── Complex
+ │    ├── Real
+ │    │     ├── Rational
+ │    │     │     └── Integral
+ │    │     └── (float)
+ │    └── (complex)
+
+math module provides 
+	constants like pi, e 
+	
+	sqrt
+	log
+	pow
+	
+	sin
+	cos
+	tan
+	
+	degrees
+	radian
+==================================================
+setup.ini 
+	---> configuration file 
+
+[database]
+host = localhost
+port = 7655
+user = admin
+password = password 
+
+[app]
+debug = true
+version = 1.0
+================================================
+
